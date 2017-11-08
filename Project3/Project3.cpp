@@ -310,7 +310,7 @@ private:
 
 double findMin(double C_alpha_min_iIn, double alpha_minIn, double alphaIn, double C_alpha_iIn, double epsilonIn, vector<vector<double>> INFOIn, int iIn, double x0)
 {
-	return find_min_single_variable(mathProblem(C_alpha_min_iIn, alpha_minIn, alphaIn, C_alpha_iIn, epsilonIn, INFOIn, iIn), x0, alpha_minIn, alphaIn, epsilonIn);
+	return find_min_single_variable(mathProblem(C_alpha_min_iIn, alpha_minIn, alphaIn, C_alpha_iIn, epsilonIn, INFOIn, iIn), x0, alpha_minIn, alphaIn, 100);
 }
 
 double binarysearch_objective(double alpha_min, double alpha, double epsilon, vector<vector<double>> INFO)
